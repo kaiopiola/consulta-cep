@@ -37,23 +37,25 @@ export default function Home({
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js with MongoDB!</a>
+          Bem-vindo à <a href="https://github.com/kaiopiola/consulta-cep">API de Consulta de CEP!</a>
         </h1>
 
         {isConnected ? (
-          <h2 className="subtitle">You are connected to MongoDB</h2>
+          <h2 className="subtitle">API conectada ao MongoDB!</h2>
         ) : (
           <h2 className="subtitle">
-            You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
-            for instructions.
+            API não está conectada ao MongoDB. Verifique o <code>README.md</code>{' '}
+            para instruções.
           </h2>
         )}
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+            Para lista completa de CEPs <a href='/api/cep/page/1'><code>api/cep/page/numero_da_pagina</code></a>
+            <br></br>
+            Para um CEP específico <a href='/api/cep/13295000'><code>api/cep/num_do_cep</code></a>
         </p>
 
-        <div className="grid">
+        {/* <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -81,7 +83,7 @@ export default function Home({
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer>
